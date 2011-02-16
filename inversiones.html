@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>RBA</title>
+    <meta name="description" content="HTML5">
+    <meta name="Victor" content="LM">
+    <link rel="shortcut icon"  href="img/LogoOficial.png">
+    <link rel="stylesheet" type="text/css" href="css/inicio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="page">
+    <div id="nav-header-iniciado">
+        <div id="logo-name">
+            <h2 id="header-logo"><img src="img/BANCO(2).png" alt="logoOficial" id="logo">
+            </h2>
+        </div>
+        <ul id="nav-list-iniciado">
+            <li><a href="#"><img src="img/buzzon.png" alt="buzzon" class="opciones_nav"></a></li>
+            <li><a href="iniciado.html"><img src="img/finanzas.png" alt="buzzon" class="opciones_nav" ></a></li>
+            <li><a href="inversiones.html"><img src="img/inversiones.png" alt="buzzon" class="opciones_nav" ></a></li>
+            <li><a href="inicio.html"><img src="img/logout.png" alt="buzzon" class="opciones_nav" ></a></li>
+        </ul>
+    </div>
+
+    <section>
+        <br>
+        <h1>Inversiones</h1><br>
+        <div class="datos_inv_header">
+            <select id="periodo1">
+                <option value="1">mes</option>
+                <option value="2">dia</option>
+                <option value="3">trimestre </option>
+                <option value="4">año</option>
+            </select>
+        </div>
+        <ul id="tipe_inversion">
+            <li class="tipe_login" id="login_part"> <a href="#">Todas</a></li>
+            <li class="tipe_login" id="login_emp"> <a href="#">Tus inversiones</a></li>
+            <li class="tipe_login resalt" > <a href="#">Recomendaciones</a></li>
+        </ul>
+        <div id="general">
+            <article  >
+                <table id="table_inversiones" class="table table-striped table-hover">
+                    <thead class="thead-dark bg-light">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Valor</th>
+                        <th>Variacion</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>Empresa 1</td>
+                        <td>1500</td>
+                        <td class="positive">+10</td>
+                    </tr>
+                    <tr>
+                        <td>Empresa 1</td>
+                        <td>1500</td>
+                        <td class="positive">+10</td>
+                    </tr>
+                    <tr>
+                        <td>Empresa 1</td>
+                        <td>1500</td>
+                        <td class="positive">+10</td>
+                    </tr>
+                </table>
+            </article><br>
+            <article class="invesion_graf">
+                <div>
+                    <p id="name_empresa">Empresa 1</p>
+                    <img src="img/Grafica2.png" alt="grafica" id=grafica_2>
+                </div>
+            </article>
+            <div class="datos_inv_header">
+                <select id="periodo2">
+                    <option value="1">mes</option>
+                    <option value="2">dia</option>
+                    <option value="3">trimestre </option>
+                    <option value="4">año</option>
+                </select>
+            </div>
+            <div id="datos_inv">
+                <p>En el ultimo trimestre tus acciones ha crecido un 4,5%, con una ganancia media de  120 €/mes y acciones por valor de 350€.</p>
+                <p>Tu inversión mejor valorada: Empresa2 -> 1020€.</p>
+                <p>Tu inversión mas rentable: Empresa3 -> +15,4% (+250€)</p>
+                <p>Peor inversión: Empresa2-> -10,6% (-75€) se recomienda vender</p>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <img src="img/BANCO(2).png" alt="logoOficial" id="logo_footer">
+        <p> &#169;BRA, S.A. Banco Regional Aragonés es una marca registrada. Todos los derechos reservados. </p>
+        <ul>
+            <li><img src="img/001-instagram.png" alt="intagram" class="social"></li>
+            <li><img src="img/002-facebook.png" alt="intagram" class="social"></li>
+            <li><img src="img/003-twitter.png" alt="intagram" class="social"></li>
+            <li><img src="img/004-youtube.png" alt="intagram" class="social"></li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>
+
+
