@@ -3,14 +3,7 @@
 	padding: 0px;
 }
 
-#page{
-	width: 1500px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-left: auto;
-	margin-right: auto;
-	border: 1px solid black;
-}
+
 
 #nav-header{
     background-color: #228bcc80;
@@ -25,12 +18,8 @@
 }
 
 #logo{
-    max-width: 12%;
-height: auto;
-padding-bottom: 0px;
-margin-bottom: -70px;
-margin-right: -25px;
-text-align: left;
+    max-width: 100%;
+
 }
 
 #logoInLogin{
@@ -61,21 +50,16 @@ display: inline-block;
 font-size: 16px;
 cursor: pointer;
 border-radius: 20%;
-margin-left: 127px;
 }
 
 button{
 	border-style: none;
-	border-radius: 20%;
-	font-size: 20px;
-	margin-left: 21px;
-	margin-top: 20px;
+	
 	padding: 9px;
 }
 
 button:active{
 	border-style: inset ;
-	font-size: 20px;
 }
 
 
@@ -83,19 +67,11 @@ button:active{
     display: inline;	
 }
 
-#first-photo{
-	margin: 10px;
-text-align: center;
-background-repeat: no-repeat;
-background-position: center;
-background-attachment: fixed;
-background-size: cover;
-padding-left: 100%;
-width: 78%;
-}
+
 
 #imagen-arriba{
 width: 100%;
+margin:1%;
 }
 
 #texto-arriba{
@@ -133,7 +109,8 @@ padding-top: 10px;
 
 
 .imagen-not{
-	width: 100%;
+	width: 80%;
+	margin: 1%;
 }
 
 section{
@@ -154,12 +131,7 @@ text-decoration: none;
 font-size: 13px;
 }
 
-footer p{
-	display: flex;
-flex-direction: row;
-margin-top: -27px;
-margin-left: 370px;
-}
+
 
 footer ul {
 	margin-top: -19px;
@@ -196,9 +168,8 @@ border-radius: 20px;
 	background: #3a5a98;
 margin-top: 4%;
 padding: 20px;
-margin-left: 40%;
-margin-right: 30%;
 border-radius: 20px;
+width: auto;
 
 }
 
@@ -240,10 +211,18 @@ border: 3px solid #3a5a98;
 margin-left: -7px;
 }
 
-.tipe_login p{
-	background-color: blue;
-	margin: -20px;
+.tipe_login:hover{
+	background-color: #1429c7;
+	color: white;
 }
+
+
+
+.option-Login{
+	text-align: center;
+}
+
+
 
 #helper_Phone{
 	margin-left: 210px;
@@ -251,7 +230,7 @@ margin-left: -7px;
 }
 
 #tipe_Login{
-margin: 0px 689px -60px 619px;
+margin: 0px 689px -60px 657px;
 border-top-left-radius: 70px;
 border-top-right-radius: 70px;
 border-bottom-right-radius: 0px;
@@ -261,29 +240,22 @@ padding-left: 3px;
 }
 
 #login_part{
-	background-color: #29a0bf;
+	background-color: rgba(144, 197, 229, 0.84);
 	color: white;
 }
 
-.tipe_login:hover a {
-	background-color: blue;
-	color: white;
-	text-decoration: none;
-}
 
-.tipe_login a{
-	text-decoration: none;
-	color: black ;
-}
+
+
 
 
 /*iniciado*/
 .opciones_nav{
-	width: 22%;
+	width: 50%;
 }
 
 #nav-header-iniciado{
-    background-color: #228bcc;
+    background-color: #228bcc80;
     background-attachment: fixed;
 	background-size: cover;
     text-align: center;
@@ -361,15 +333,16 @@ padding-top: 10px;
 aside{
 	float: right;
 	margin-right: 10px;
-	top: 130px;
+	top: 20%;
 	position: fixed;
-	left: 1256px;
+	left: 65%;
 	bottom: 242px;
 }
 
 #trans_nacional{
 	border: 1px solid black;
 }
+
 
 article{
 	width: 35%;
@@ -444,7 +417,6 @@ a{
 #table_inversiones {
     text-align: left;
     border: 3px solid blue;
-    margin-top: 39px;
 }
 
 /*inversiones*/
@@ -479,7 +451,7 @@ a{
 #datos_inv {
     text-align: left;
     border: 8px solid blue;
-    margin-right: 543px;
+    margin-right: 40%;
     margin-bottom: 15px;
     margin-left: 13px;
 }
@@ -512,4 +484,166 @@ a{
     border: 3px solid #3a5a98;
     background-color: #29a0bf;
     margin-right: 301px;
+}
+
+
+
+.aparicion{
+	animation: 5s aparicion 1;
+	transform-origin: top left;
+	}
+	@keyframes aparicion {
+	0% { opacity: 0; }
+	20% { opacity: 0.8; }
+	}
+
+
+
+
+/*Media query*/
+
+.nav-oculta
+{
+	text-align: center;
+}
+
+#logo-2{
+	max-width: 20%;
+}
+
+.nav-option{
+	font-size: 31px;
+	border-radius: 40%;
+}
+
+
+.nav-option:hover{
+	animation-name: shadow;
+	transition-duration: 1.5s;
+	background-color: rgb(232, 88, 203);
+	
+}
+
+@media (max-width: 992px ){
+	aside{
+		float: none;
+		margin-right: 10px;
+		top: 20%;
+		position: static;
+		left: 65%;
+		bottom: 242px;
+	}
+
+	.opciones_nav{
+		width: 25%;
+	}
+
+	#logo{
+		max-width: 12%;
+	
+	}
+
+	article {
+		width: 80%;
+	}
+	
+
+	#helper{
+		text-align: center;
+	}
+	#helper a img{
+		width: 20%;
+	}
+
+	form input {
+		width: 100%;
+	}
+
+	#helper{
+		display: block ;
+	}
+
+	#general{
+		width: 100%;
+		margin-top: auto;
+		margin-bottom: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.table{
+		width: 1%;
+	}	
+
+	.nav-item a img:hover{
+		background-color: blue;
+	}
+
+	.form-Login{
+		margin-top: 25%;
+		margin-bottom: 20%;
+
+	}
+
+	.invesion_graf {
+		width: auto;
+		float: initial;
+		padding-right: 42px;
+		padding-top: 10px;
+		margin-top: auto;
+	}
+
+	.tipe_login{
+
+	border-bottom-right-radius: 9px;
+	border-bottom-left-radius: 11px;
+	border: 3px solid #3a5a98;
+	margin-left: 0;
+	}
+
+	.imagen-not{
+		width: 100%;
+	}
+
+	
+
+
+}
+
+@media (max-width: 767px ){
+	#helper{
+		text-align: center;
+	}
+	#helper a img{
+		width: 20%;
+	}
+
+	form input {
+		width: 100%;
+	}
+
+	aside{
+		float: none;
+		margin-right: 10px;
+		top: 20%;
+		position: static;
+		left: 65%;
+		bottom: 242px;
+	}
+
+	.resalt{
+		background-color: red;
+		animation-name: shadow;
+		animation-duration: 1s;
+		animation-iteration-count: infinite
+	}
+	
+
+	
+	  @keyframes shadow {
+		50%{ box-shadow: 0 0 60px rgb(198, 223, 18);}
+		25%, 75%{ box-shadow: 0 0 30px rgb(198, 223, 18);}
+		0%{ box-shadow: 0 0 15px rgb(198, 223, 18);}
+		100%{ box-shadow: 0 10 150px rgb(198, 223, 18);}
+	  }
 }
